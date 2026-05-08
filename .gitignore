@@ -1,0 +1,290 @@
+# ===================================
+# ShopFlow - .gitignore
+# ===================================
+
+# ===================================
+# Backend (Java/Spring Boot)
+# ===================================
+
+# Maven
+backend/target/
+backend/pom.xml.tag
+backend/pom.xml.releaseBackup
+backend/pom.xml.versionsBackup
+backend/pom.xml.next
+backend/release.properties
+backend/dependency-reduced-pom.xml
+backend/buildNumber.properties
+backend/.mvn/timing.properties
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+backend/.gradle
+backend/build/
+backend/!gradle/wrapper/gradle-wrapper.jar
+backend/!**/src/main/**/build/
+backend/!**/src/test/**/build/
+
+# Eclipse
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+
+# IntelliJ IDEA
+backend/.idea
+backend/*.iws
+backend/*.iml
+backend/*.ipr
+backend/out/
+backend/!**/src/main/**/out/
+backend/!**/src/test/**/out/
+
+# NetBeans
+backend/nbproject/private/
+backend/nbbuild/
+backend/dist/
+backend/nbdist/
+backend/.nb-gradle/
+
+# VS Code
+backend/.vscode/
+
+# Database
+backend/data/*.db
+backend/data/*.mv.db
+backend/data/*.trace.db
+backend/*.db
+backend/*.mv.db
+backend/*.trace.db
+
+# Logs
+backend/logs/
+backend/*.log
+backend/log/
+
+# Uploads
+backend/uploads/images/*
+!backend/uploads/images/.gitkeep
+
+# ===================================
+# Frontend (Next.js/React)
+# ===================================
+
+# Dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+# Testing
+frontend/coverage/
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# Production
+frontend/build/
+frontend/dist/
+
+# Misc
+frontend/.DS_Store
+frontend/*.pem
+
+# Debug
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Local env files
+frontend/.env*.local
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Vercel
+frontend/.vercel
+
+# Typescript
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# ===================================
+# OS Files
+# ===================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================================
+# IDE & Editors
+# ===================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+out/
+
+# Kiro/Claude
+.claude/
+.kiro/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===================================
+# Temporary Files
+# ===================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# ===================================
+# Security & Secrets
+# ===================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Secrets
+secrets/
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+
+# Credentials
+credentials.json
+service-account.json
+
+# ===================================
+# Documentation (Keep)
+# ===================================
+
+# Keep documentation
+!docs/
+!docs/**/*.md
+!README.md
+!LICENSE
+
+# ===================================
+# Project Specific
+# ===================================
+
+# Test data
+test-data/
+sample-data/
+
+# Backup files
+*.backup
+backup/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Exclude compiled files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ===================================
+# Keep Important Files
+# ===================================
+
+# Keep these files
+!.gitignore
+!.gitattributes
+!README.md
+!LICENSE
+!pom.xml
+!package.json
+!package-lock.json
+!tsconfig.json
+!next.config.js
+!tailwind.config.ts
